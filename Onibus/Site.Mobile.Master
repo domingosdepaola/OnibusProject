@@ -1,0 +1,105 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Mobile.master.cs" Inherits="Onibus.Site_Mobile" %>
+
+<%@ Register Src="~/ViewSwitcher.ascx" TagPrefix="friendlyUrls" TagName="ViewSwitcher" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1"/>
+    <meta charset="utf-8"/>
+    <title>Localizador de &Ocirc;nibus - RJ</title>
+    <meta name="fb_admins_meta_tag" content="" />
+    <meta name="keywords" content="Localizar onibus rio, localizar ônibus, Localizar onibus, linhas ônibus rj" />
+    <meta name="description" content="Fique sabendo aonde está o seu ônibus no mapa de graça e pelo navegador, sem instalar nada." />
+    <link rel="canonical" href="http://www.localizadordeonibus.com.br" />
+    <meta property="og:title" content="Localizador de &Ocirc;nibus - RJ" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.localizadordeonibus.com.br" />
+    <meta property="og:site_name" content="Localizador de &Ocirc;nibus - RJ" />
+    <meta property="og:description" content="Fique sabendo aonde está o seu ônibus no mapa de graça e pelo navegador, sem instalar nada." />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/SiteBootStrap.css" rel="stylesheet" />
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <asp:PlaceHolder runat="server">
+        <script src="<%: ResolveUrl("~/Scripts/modernizr-2.6.2.js") %>"></script>
+    </asp:PlaceHolder>
+    <meta name="viewport" content="width=device-width" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+</head>
+<body>
+    <style>
+        .jumbotron h1 {
+            font-size: 23px;
+        }
+
+        .jumbotron {
+            margin-top: 5px;
+        }
+
+        .jumbotron {
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 21px;
+            font-weight: 200;
+            line-height: 2.1428571435;
+            color: inherit;
+            background-color: #eeeeee;
+            width: 450px;
+        }
+
+        .lead {
+            display: none;
+        }
+
+        .importante {
+            font-weight: bold;
+        }
+    </style>
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="jquery.ui.combined" />
+            </Scripts>
+        </asp:ScriptManager>
+        <script type="text/javascript">
+            function isMobile() {
+                var width = screen.width;
+                var tamanhoTela = parseInt(width);
+                if (tamanhoTela < 600) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+        </script>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header" style="float:left;margin-right:30px">
+                    <a class="navbar-brand" runat="server" href="~/">Localizador de ônibus RJ</a>
+                </div>
+                <div class="navbar-header" style="float:left;margin-right:30px">
+                    <a class="navbar-brand" runat="server" href="~/">Home</a>
+                </div>
+                <div class="navbar-header" style="float:left;margin-right:30px">
+                    <a class="navbar-brand" runat="server" href="~/About?mobile=s">Sobre</a>
+                </div>
+                <div class="navbar-header">
+                    <a class="navbar-brand" runat="server" href="~/Contact?mobile=s">Contacto</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Domingos Carreira De Paola </p>
+            </footer>
+         </div>
+    </form>
+</body>
+</html>

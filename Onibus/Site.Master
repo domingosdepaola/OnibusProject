@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Onibus.SiteMaster" %>
+
+<%@ Register Src="~/ViewSwitcher.ascx" TagPrefix="friendlyUrls" TagName="ViewSwitcher" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+     <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1"/>
+    <meta charset="utf-8"/>
+    <title>Localizador de &Ocirc;nibus - RJ</title>
+    <meta name="fb_admins_meta_tag" content="" />
+    <meta name="keywords" content="Localizar onibus rio, localizar ônibus, Localizar onibus, linhas ônibus rj" />
+    <meta name="description" content="Fique sabendo aonde está o seu ônibus no mapa de graça e pelo navegador, sem instalar nada." />
+    <link rel="canonical" href="http://www.localizadordeonibus.com.br" />
+    <meta property="og:title" content="Localizador de &Ocirc;nibus - RJ" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.localizadordeonibus.com.br" />
+    <meta property="og:site_name" content="Localizador de &Ocirc;nibus - RJ" />
+    <meta property="og:image" content="http://www.localizadordeonibus.com.br/Images/GPSMobile.jpg"/>
+    <meta property="og:description" content="Fique sabendo aonde está o seu ônibus no mapa de graça e pelo navegador, sem instalar nada." />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/SiteBootStrap.css" rel="stylesheet" />
+    <asp:PlaceHolder runat="server">
+        <script src="<%: ResolveUrl("~/Scripts/modernizr-2.6.2.js") %>"></script>
+    </asp:PlaceHolder>
+    <meta name="viewport" content="width=device-width" />
+	<meta name="google-site-verification" content="G7m4osi1tfl7IZ8r7SzTvl6DQTUkpbv95o6E5snXzzQ" />
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="jquery.ui.combined" />
+            </Scripts>
+        </asp:ScriptManager>
+        <script type="text/javascript">
+            function isMobile() {
+                var width = screen.width;
+                var tamanhoTela = parseInt(width);
+                if (tamanhoTela < 600) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+        </script>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/">Localizador de ônibus RJ</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/">Home</a></li>
+                        <li><a runat="server" href="~/About">Sobre</a></li>
+                        <li><a runat="server" href="~/Contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Domingos Carreira De Paola </p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
