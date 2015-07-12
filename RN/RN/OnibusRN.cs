@@ -21,7 +21,7 @@ namespace RN
         {
             ListaOnibus.Instance.Lista = GetOnibusAllJSON();
         }
-        private List<OnibusBO> GetOnibus(string numeroLinha)
+        public List<OnibusBO> GetOnibus(string numeroLinha)
         {
             if (ListaOnibus.Instance.Lista.Count == 0)
             {

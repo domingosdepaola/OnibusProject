@@ -1,4 +1,4 @@
-namespace MvcApplication1.Areas.HelpPage
+namespace OnibusAPI.Areas.HelpPage
 {
     /// <summary>
     /// Indicates whether the sample is used for request or response

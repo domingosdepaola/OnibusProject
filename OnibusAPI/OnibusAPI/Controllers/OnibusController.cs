@@ -1,5 +1,5 @@
 ﻿using BO;
-using MvcApplication1.Util;
+using OnibusAPI.Util;
 using RN;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 
-namespace MvcApplication1.Controllers
+namespace OnibusAPI.Controllers
 {
     public class OnibusController : ApiController
     {

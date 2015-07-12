@@ -1,9 +1,9 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using MvcApplication1.Areas.HelpPage.Models;
+using OnibusAPI.Areas.HelpPage.Models;
 
-namespace MvcApplication1.Areas.HelpPage.Controllers
+namespace OnibusAPI.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.
