@@ -17,6 +17,8 @@ namespace BO
         public double Longitude { get; set; }
 
         public int Velocidade { get; set; }
+
+        public String Endereco { get; set; }
     }
     public class DATA
     {

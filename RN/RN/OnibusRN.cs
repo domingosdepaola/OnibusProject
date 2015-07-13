@@ -1,4 +1,5 @@
 ﻿using BO;
+using Common;
 using DAL;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -27,8 +28,8 @@ namespace RN
             {
                 AtualizaListaTotalOnibus();
             }
-            return ListaOnibus.Instance.Lista.Where(x => x.Linha == numeroLinha).ToList();
-
+            List<OnibusBO> lstRetorno = ListaOnibus.Instance.Lista.Where(x => x.Linha == numeroLinha).ToList();
+            return lstRetorno;
         }
         public string GetOnibusJson(string numeroLinha)
         {
