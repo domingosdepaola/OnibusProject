@@ -13,17 +13,27 @@ namespace OnibusAPI.Controllers
 {
     public class OnibusController : ApiController
     {
-       
+
         // GET: /Onibus/
         List<OnibusBO> lstOnibus = new List<OnibusBO>();
         OnibusRN onibusRN = new OnibusRN();
-        public string GetOnibus(string numeroLinha)
+        public string GetOnibus(string x, string y, string z)
         {
-            ProcessoUtil.Instance.ProcessamentoParalelo();
-            return onibusRN.GetOnibusJson(numeroLinha);
+            string numeroLinha = CriptUtil.Cript.Decript(x, "NestorDePaola");
+            string latitudeString = CriptUtil.Cript.Decript(y, "NestorDePaola");
+            string longitudeString = CriptUtil.Cript.Decript(z, "NestorDePaola");
+            if (numeroLinha != null && numeroLinha != "")
+            {
+                ProcessoUtil.Instance.ProcessamentoParalelo();
+                return onibusRN.GetOnibusJson(numeroLinha);
+            }
+            else 
+            {
+                return null;
+            }
         }
-        
-        
-        
+
+
+
     }
 }

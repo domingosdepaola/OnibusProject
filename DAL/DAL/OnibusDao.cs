@@ -62,6 +62,16 @@ namespace DAL
             return lstOnibus;
 
         }
+        public List<OnibusBO> getOnibusBRTJSON() 
+        {
+            string jsonBRTURL = "http://dadosabertos.rio.rj.gov.br/apitransporte/apresentacao/rest/index.cfm/brt";
+            List<OnibusBO> lstOnibus = new List<OnibusBO>();
+
+
+            //DataSet ds = getDadosFromCSV(pathCompleto);
+            lstOnibus = getDadosFromJSON(jsonBRTURL);
+            return lstOnibus;
+        }
         private string getStringFromURL(string url)
         {
             return GetStringJSON(url);

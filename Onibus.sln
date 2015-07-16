@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnibusAPI", "OnibusAPI\Onib
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common\Common.csproj", "{125B2C0C-D8D4-4D90-8013-0A600437D610}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnibusGet", "OnibusGet\OnibusGet\OnibusGet.csproj", "{C2A5B607-8FD4-48BE-8535-EBDD2C5D9A0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquivosAndroid", "ArquivosAndroid\ArquivosAndroid\ArquivosAndroid.csproj", "{526DDE51-D820-4B1C-9D4A-68F7C5762FEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{125B2C0C-D8D4-4D90-8013-0A600437D610}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{125B2C0C-D8D4-4D90-8013-0A600437D610}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{125B2C0C-D8D4-4D90-8013-0A600437D610}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2A5B607-8FD4-48BE-8535-EBDD2C5D9A0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A5B607-8FD4-48BE-8535-EBDD2C5D9A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2A5B607-8FD4-48BE-8535-EBDD2C5D9A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A5B607-8FD4-48BE-8535-EBDD2C5D9A0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{526DDE51-D820-4B1C-9D4A-68F7C5762FEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{526DDE51-D820-4B1C-9D4A-68F7C5762FEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{526DDE51-D820-4B1C-9D4A-68F7C5762FEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{526DDE51-D820-4B1C-9D4A-68F7C5762FEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

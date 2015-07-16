@@ -31,9 +31,9 @@ namespace RN
             List<OnibusBO> lstRetorno = ListaOnibus.Instance.Lista.Where(x => x.Linha == numeroLinha).ToList();
             return lstRetorno;
         }
-        public string GetOnibusJson(string numeroLinha)
+        public string GetOnibusJson(string x)
         {
-            List<OnibusBO> lstOnibus = GetOnibus(numeroLinha);
+            List<OnibusBO> lstOnibus = GetOnibus(x);
             return JsonConvert.SerializeObject(lstOnibus);
         }
     }
