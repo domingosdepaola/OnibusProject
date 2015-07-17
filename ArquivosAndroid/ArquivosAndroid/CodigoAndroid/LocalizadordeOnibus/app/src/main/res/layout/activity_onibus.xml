@@ -20,7 +20,7 @@ tools:context=".OnibusActivity">
     android:layout_height="80px"
     android:id="@+id/btnBuscar"
     android:text="Buscar"/>
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_marginTop="140px"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:id="@+id/map"

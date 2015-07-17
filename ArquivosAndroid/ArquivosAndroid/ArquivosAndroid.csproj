@@ -42,6 +42,48 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\generated\res\rs\debug\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\generated\res\rs\release\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\generated\source\aidl\debug\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\generated\source\aidl\release\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\generated\source\rs\debug\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\generated\source\rs\release\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\assets\debug\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\assets\release\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\dependency-cache\debug\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\dependency-cache\release\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\aidl\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\assets\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\assets\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\res\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.0.0\res\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.0.0\res\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.0.0\res\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.0.0\res\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.0.0\res\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.0.0\res\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.0.0\res\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.0.0\res\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.0.0\res\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.0.0\res\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.0.0\res\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.0.0\res\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.0.0\res\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\7.0.0\res\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\ndk\debug\lib\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\ndk\debug\obj\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\ndk\release\lib\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\ndk\release\obj\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\rs\debug\lib\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\rs\debug\obj\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\rs\release\lib\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\rs\release\obj\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\tmp\compileDebugJava\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\tmp\compileReleaseJava\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\libs\" />
+    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\src\main\res\drawable\images\" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="CodigoAndroid\LocalizadordeOnibus\.gitignore" />
     <None Include="CodigoAndroid\LocalizadordeOnibus\.gradle\2.2.1\taskArtifacts\cache.properties" />
     <None Include="CodigoAndroid\LocalizadordeOnibus\.gradle\2.2.1\taskArtifacts\cache.properties.lock" />
@@ -269,9 +311,10 @@
     <None Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\classes\debug\domingosdepaola\localizadordeonibus\Common\DateUtil.class" />
     <None Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\classes\debug\domingosdepaola\localizadordeonibus\Common\LocationUtil.class" />
     <None Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\classes\debug\domingosdepaola\localizadordeonibus\OnibusActivity%241.class" />
-    <None Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\classes\debug\domingosdepaola\localizadordeonibus\OnibusActivity%242%241.class" />
     <None Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\classes\debug\domingosdepaola\localizadordeonibus\OnibusActivity%242.class" />
+    <None Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\classes\debug\domingosdepaola\localizadordeonibus\OnibusActivity%243%241.class" />
     <None Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\classes\debug\domingosdepaola\localizadordeonibus\OnibusActivity%243.class" />
+    <None Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\classes\debug\domingosdepaola\localizadordeonibus\OnibusActivity%244.class" />
     <None Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\classes\debug\domingosdepaola\localizadordeonibus\OnibusActivity%24MapReady.class" />
     <None Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\classes\debug\domingosdepaola\localizadordeonibus\OnibusActivity.class" />
     <None Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\classes\debug\domingosdepaola\localizadordeonibus\R%24anim.class" />
@@ -504,9 +547,10 @@
     <None Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\classes\release\domingosdepaola\localizadordeonibus\Common\DateUtil.class" />
     <None Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\classes\release\domingosdepaola\localizadordeonibus\Common\LocationUtil.class" />
     <None Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\classes\release\domingosdepaola\localizadordeonibus\OnibusActivity%241.class" />
-    <None Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\classes\release\domingosdepaola\localizadordeonibus\OnibusActivity%242%241.class" />
     <None Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\classes\release\domingosdepaola\localizadordeonibus\OnibusActivity%242.class" />
+    <None Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\classes\release\domingosdepaola\localizadordeonibus\OnibusActivity%243%241.class" />
     <None Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\classes\release\domingosdepaola\localizadordeonibus\OnibusActivity%243.class" />
+    <None Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\classes\release\domingosdepaola\localizadordeonibus\OnibusActivity%244.class" />
     <None Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\classes\release\domingosdepaola\localizadordeonibus\OnibusActivity%24MapReady.class" />
     <None Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\classes\release\domingosdepaola\localizadordeonibus\OnibusActivity.class" />
     <None Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\classes\release\domingosdepaola\localizadordeonibus\R%24anim.class" />
@@ -2298,49 +2342,6 @@
     <Content Include="CodigoAndroid\LocalizadordeOnibus\app\src\release\res\values\google_maps_api.xml" />
     <Content Include="CodigoAndroid\LocalizadordeOnibus\build\intermediates\dex-cache\cache.xml" />
     <Content Include="CodigoAndroid\LocalizadordeOnibus\gradle\wrapper\gradle-wrapper.jar" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\generated\res\generated\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\generated\res\rs\debug\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\generated\res\rs\release\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\generated\source\aidl\debug\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\generated\source\aidl\release\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\generated\source\rs\debug\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\generated\source\rs\release\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\assets\debug\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\assets\release\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\dependency-cache\debug\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\dependency-cache\release\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\aidl\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\assets\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\assets\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\res\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.0.0\res\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.0.0\res\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.0.0\res\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.0.0\res\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.0.0\res\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.0.0\res\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.0.0\res\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.0.0\res\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.0.0\res\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.0.0\res\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.0.0\res\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.0.0\res\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.0.0\res\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\7.0.0\res\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\ndk\debug\lib\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\ndk\debug\obj\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\ndk\release\lib\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\ndk\release\obj\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\rs\debug\lib\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\rs\debug\obj\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\rs\release\lib\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\intermediates\rs\release\obj\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\tmp\compileDebugJava\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\build\tmp\compileReleaseJava\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\libs\" />
-    <Folder Include="CodigoAndroid\LocalizadordeOnibus\app\src\main\res\drawable\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

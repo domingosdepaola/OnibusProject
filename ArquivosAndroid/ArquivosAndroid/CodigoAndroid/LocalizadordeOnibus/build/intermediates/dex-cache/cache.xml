@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\classes-ead467dd204895678b55b3c651d3c87aa4d3063f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\classes-e90ad2bae398637953858feb276d73e1ec0a231f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\classes-b72672f39d3fcf32901a30a8d6ad084fac46e2a9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\classes-ed35f9da72f9e4ec17cb9ddd65a8109be0660b36.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\classes-e3f3bc4d9455d1b09acc485152612023289bb9db.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\classes-cd667ebff3f2c59a03e8ed4bfe8c734fabad0728.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\classes-44243aef03d5546d9bcd422144c0530794a5d1fd.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\classes-881e9095c2796ba96b9f4b54847a57e859a9c927.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\classes-ed6424259cb3788edeb6ce8d3339ac8259735399.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\.gradle\caches\modules-2\files-2.1\org.codehaus.jackson\jackson-mapper-asl\1.9.13\1ee2f2bed0e5dd29d1cb155a166e6f8d50bbddb7\jackson-mapper-asl-1.9.13.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1ee2f2bed0e5dd29d1cb155a166e6f8d50bbddb7">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\jackson-mapper-asl-1.9.13-e64e10d762d568819f4a04495353253cf93218d2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\classes-957096642554c2046ccfba98452716b2e48b8e6f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\classes-b1031a7114bb2f7bb18f45d21aac7686c13ee227.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\classes-8dbe3606142c2b6681d559ca0b4d1808798809af.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\classes-62139b599ef71484f5bc7075cc57173a5040633a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\.gradle\caches\modules-2\files-2.1\org.codehaus.jackson\jackson-core-asl\1.9.13\3c304d70f42f832e0a86d45bd437f692129299a4\jackson-core-asl-1.9.13.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3c304d70f42f832e0a86d45bd437f692129299a4">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\jackson-core-asl-1.9.13-76836e49e92deb0dc32122055c1de5a0a68d6111.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\classes-0d2b9ce3f96bcff3c785d77ae4ec9d0844cf4f98.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="055783146ba9654a725442563be78cad303aad1f">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\classes-c447a4196589625b573e70ce64a2c0a5a75ec096.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\classes-006a34ac3c6fc4b02d5138ffd3a7ea490bc6e91c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\classes-054a655ee3bf9ce291c83de18d6280f6ae88b249.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-0fb37bf9c35702d1161303e7e2861019f20bb320.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\classes-b321a14e1171f1f58528cc38a3b48e392f295d62.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\.gradle\caches\modules-2\files-2.1\org.springframework.android\spring-android-rest-template\1.0.1.RELEASE\e132d929bd181941f79b0d63edafb8a86ae6fd33\spring-android-rest-template-1.0.1.RELEASE.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e132d929bd181941f79b0d63edafb8a86ae6fd33">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\spring-android-rest-template-1.0.1.RELEASE-866df8369126dc29a340d45df4cef6a4685f4a3b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\classes-e0f5805befd32cc18fd70294710b91e5d80ebbe3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-71c71d2eb3368a49faff13f49729e2e31679fc03.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\classes-51c89f1fe6d3320e3cdef59356ee0b3233a923f2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\.gradle\caches\modules-2\files-2.1\org.springframework.android\spring-android-core\1.0.1.RELEASE\e68f0e8e4b636ee30c4de58953be38d9b72a5e3b\spring-android-core-1.0.1.RELEASE.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e68f0e8e4b636ee30c4de58953be38d9b72a5e3b">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\spring-android-core-1.0.1.RELEASE-fc263cf9f6329a7dbf717b949180094a1af5c478.jar" />
+    </item>
+    <item
+        jar="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
+        <dex dex="C:\Users\Doo\AndroidStudioProjects\LocalizadordeOnibus\app\build\intermediates\pre-dexed\debug\classes-b8c669fcf1147730ecef84861430b08ab429fe69.jar" />
+    </item>
+
+</items>

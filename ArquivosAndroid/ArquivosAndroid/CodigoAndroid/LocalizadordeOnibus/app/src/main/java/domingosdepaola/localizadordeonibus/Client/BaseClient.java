@@ -37,6 +37,7 @@ public class BaseClient {
 
     //public static final String ROOT_URL = "http://10.2.11.115/PadSamuWebApi/api/";
     public static final String ROOT_URL = "http://www.localizadordeonibus.com.br/OnibusWebAPI/api";
+    //public static final String ROOT_URL = "http://192.168.0.2/OnibusWebAPI/api";
     //public static final String ROOT_URL = "http://10.2.11.192/SamuWebApi/api/";
     //public static final String ROOT_URL = "http://10.2.11.5/SamuWebApi/api/";
     protected RestTemplate restTemplate;

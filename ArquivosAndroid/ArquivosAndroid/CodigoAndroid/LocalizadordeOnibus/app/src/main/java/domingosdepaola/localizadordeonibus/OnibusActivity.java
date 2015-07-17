@@ -23,6 +23,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -48,6 +49,9 @@ public class OnibusActivity extends FragmentActivity implements AsyncResponse {
     private LatLng myPosition;
     private MapReady mapReady;
     private int countResumed;
+    AlertDialog.Builder builderAguarde;
+    private AlertDialog alertAguarde;
+
     private Map<Marker, Object> markers = new HashMap<>();
     Location myLocation;
     LocationUtil locationUtil;
@@ -58,25 +62,34 @@ public class OnibusActivity extends FragmentActivity implements AsyncResponse {
         asyncTask.delegate = this;
         setContentView(R.layout.activity_onibus);
         setUpMapIfNeeded();
-        configMap();
-        locationUtil = new LocationUtil(this);
-        final Button button = (Button) findViewById(R.id.btnBuscar);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                mMap.clear();
-                setUpMap();
-                EditText txt = (EditText) findViewById(R.id.txtNumero);
-                String numeroLinha = txt.getText().toString();
-                try {
-                    double latitudeAtual = myLocation.getLatitude();
-                    double longitudeAtual = myLocation.getLongitude();
-                    asyncTask.execute(numeroLinha,latitudeAtual,longitudeAtual);
+        if (mMap != null) {
+            configMap();
+            locationUtil = new LocationUtil(this);
+            final Button button = (Button) findViewById(R.id.btnBuscar);
+            button.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    mMap.clear();
+                    setUpMap();
+                    EditText txt = (EditText) findViewById(R.id.txtNumero);
+                    String numeroLinha = txt.getText().toString();
+                    try {
+                        enableButton(false);
+                        ExibeAguarde();
 
-                } catch (Exception ex) {
-                    String x = ex.getMessage();
+                        double latitudeAtual = myLocation.getLatitude();
+                        double longitudeAtual = myLocation.getLongitude();
+                        asyncTask.execute(numeroLinha, latitudeAtual, longitudeAtual);
+
+                    } catch (Exception ex) {
+                        enableButton(true);
+                        FechaAguarde();
+                        String x = ex.getMessage();
+                    }
                 }
-            }
-        });
+            });
+        } else {
+            ExibeAlerta("ERRO", "Não foi possivel exibir o mapa, verifique se o google play services está instalado.", true);
+        }
     }
 
     public Map<Marker, Object> getMarkers() {
@@ -101,6 +114,10 @@ public class OnibusActivity extends FragmentActivity implements AsyncResponse {
     protected void onResume() {
         super.onResume();
         setUpMapIfNeeded();
+    }
+
+    public void posCenterMap() {
+
     }
 
     public void centerMap() {
@@ -139,9 +156,31 @@ public class OnibusActivity extends FragmentActivity implements AsyncResponse {
             //}
 
         }
+        Runnable runnable = new Runnable() {
+            public void run() {
+                try {
+                    Thread.sleep(3000);
+                } catch (Exception ex) {
+                }
+                asyncTask.execute("Retorno");
+                //long endTime = System.currentTimeMillis()
+                //  + 20*1000;
 
+                // while (System.currentTimeMillis() < endTime) {
+                // synchronized (this) {
+                // try {
+                //    wait(endTime -
+                ///        System.currentTimeMillis());
+                //} catch (Exception e) {}
+                // }
+                //}
+            }
+        };
+        Thread mythread = new Thread(runnable);
+        mythread.start();
 
     }
+
 
     public void onMarkerClickListener() {
 
@@ -163,8 +202,8 @@ public class OnibusActivity extends FragmentActivity implements AsyncResponse {
 
                             Onibus onibus = (Onibus) markers.get(marker);
                             String formattedDate = DateUtil.format(onibus.DataHora, "HH:mm:ss");
-                            onibus.Endereco = locationUtil.getAddress(onibus.Latitude,onibus.Longitude);
-                            ExibeAlerta(onibus.Linha + "- nº " + onibus.Ordem  + " - hora:" + formattedDate, "Localização: " + (onibus.Endereco != null ? onibus.Endereco : ""),false);
+                            onibus.Endereco = locationUtil.getAddress(onibus.Latitude, onibus.Longitude);
+                            ExibeAlerta(onibus.Linha + "- nº " + onibus.Ordem + " - hora:" + formattedDate, "Localização: " + (onibus.Endereco != null ? onibus.Endereco : ""), false);
                             // if (getOcorrenciaPinClicked() != null)
                             //getOcorrenciaPinClicked().onOcorrenciaPinCliecked(marker);
                         }
@@ -213,7 +252,9 @@ public class OnibusActivity extends FragmentActivity implements AsyncResponse {
             // Try to obtain the map from the SupportMapFragment.
             mMap = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map))
                     .getMap();
-            this.onMarkerClickListener();
+            if (mMap != null) {
+                this.onMarkerClickListener();
+            }
             // Check if we were successful in obtaining the map.
             if (mMap != null) {
                 setUpMap();
@@ -230,7 +271,7 @@ public class OnibusActivity extends FragmentActivity implements AsyncResponse {
     private AlertDialog alerta;
 
     private void ExibeAlerta(String titulo, String texto, final Boolean desculpe) { //Cria o gerador do AlertDialog
-
+        FechaAguarde();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         //define o titulo
         builder.setTitle(titulo);
@@ -252,6 +293,22 @@ public class OnibusActivity extends FragmentActivity implements AsyncResponse {
         alerta.show();
     }
 
+    private void ExibeAguarde() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        //define o titulo
+        builder.setTitle("Aguarde");
+        //define a mensagem
+        builder.setMessage("Aguarde processando...");
+
+        this.alertAguarde = builder.create();
+        this.alertAguarde.show();
+    }
+
+    private void FechaAguarde() {
+        if (this.alertAguarde != null) {
+            this.alertAguarde.cancel();
+        }
+    }
 
     private void setUpMap() {
         // Get LocationManager object from System Service LOCATION_SERVICE
@@ -289,11 +346,13 @@ public class OnibusActivity extends FragmentActivity implements AsyncResponse {
             mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
 
             // Zoom in the Google Map
-            mMap.animateCamera(CameraUpdateFactory.zoomTo(14));
+            mMap.animateCamera(CameraUpdateFactory.zoomTo(15));
             myPosition = new LatLng(latitude, longitude);// = mMap.addMarker(new MarkerOptions().position(new LatLng(latitude, longitude)).title("Voce está aqui").snippet("Sua localização"));
         } catch (Exception ex) {
             String msg = ex.getMessage();
-            ExibeAlerta("ERRO", "Nao foi possivel obter a sua localização. Verifique as configurações de GPS",true);
+            enableButton(true);
+            FechaAguarde();
+            ExibeAlerta("ERRO", "Nao foi possivel obter a sua localização. Verifique as configurações de GPS", true);
         }
     }
 
@@ -311,16 +370,29 @@ public class OnibusActivity extends FragmentActivity implements AsyncResponse {
         }
     }
 
+    private void enableButton(boolean enable) {
+        final Button button = (Button) findViewById(R.id.btnBuscar);
+        button.setEnabled(enable);
+    }
+
     @Override
     public void processFinish(Object output) {
         this.asyncTask = new TaskExecute(this);
         asyncTask.delegate = this;
-        List<Onibus> lstOnibus = (List<Onibus>) output;
-        if (lstOnibus != null && lstOnibus.size() > 0) {
-            AddMarkers(lstOnibus);
-            centerMap();
-        }else{
-            ExibeAlerta("Sem resultados","Nenhum resultado encontrado",true);
+        if (output instanceof String) {
+            setUpMap();
+
+        } else {
+            enableButton(true);
+            FechaAguarde();
+
+            List<Onibus> lstOnibus = (List<Onibus>) output;
+            if (lstOnibus != null && lstOnibus.size() > 0) {
+                AddMarkers(lstOnibus);
+                centerMap();
+            } else {
+                ExibeAlerta("Sem resultados", "Nenhum resultado encontrado", true);
+            }
         }
     }
 }
