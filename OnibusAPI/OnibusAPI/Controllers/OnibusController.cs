@@ -32,7 +32,21 @@ namespace OnibusAPI.Controllers
                 return null;
             }
         }
-
+        public List<OnibusBO> GetOnibusWP(string x,string y,string z) 
+        {
+            string numeroLinha = x;
+            string latitudeString = y;
+            string longitudeString = z;
+            if (numeroLinha != null && numeroLinha != "")
+            {
+                ProcessoUtil.Instance.ProcessamentoParalelo();
+                return onibusRN.GetBus(numeroLinha);
+            }
+            else
+            {
+                return null;
+            }
+        }
 
 
     }

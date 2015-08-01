@@ -36,5 +36,10 @@ namespace RN
             List<OnibusBO> lstOnibus = GetOnibus(x);
             return JsonConvert.SerializeObject(lstOnibus);
         }
+        public List<OnibusBO> GetBus(string x) 
+        {
+            List<OnibusBO> lstOnibus = GetOnibus(x);
+            return lstOnibus;
+        }
     }
 }
